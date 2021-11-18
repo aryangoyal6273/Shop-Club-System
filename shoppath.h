@@ -34,34 +34,6 @@ else
 
 }
 
-
-bool check_corners(string a){
-string s;
-string sample[20]={"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"};
-for(int i=1;i<20;i++){
-    s="Corner-"+sample[i-1];
-    if(s==a){
-        return true;
-    }
-
-}
-return false;
-}
-
-bool check_points(string a){
-string s;
-string sample[20]={"1","2","3","4","5","6","7","8","9","10"};
-for(int i=1;i<20;i++){
-    s="Point-"+sample[i-1];
-    if(s==a){
-        return true;
-    }
-
-}
-return false;
-}
-
-
 void djki(T src,T destination){
     unordered_map<T,int> dist;
     for(auto j:l){
